@@ -5,24 +5,322 @@
 
     <title>Model S</title>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        img{
-            width:100%;
-            height: auto;
-            max-width:600px;
-            max-height:375px;
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Avenir;
         }
+
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .center {
+            margin: 0 auto;
+            width: 90%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #navigation {
+            height: 60px;
+            background-color: #4B5362;
+        }
+
+        #logo {
+            text-decoration: none;
+            
+            width: 80px;
+            height: 30px;
+            font-size: 20px;
+            font-weight: bolder;
+            padding: 15px 30px;
+        }
+
+        #logo a {
+            color: azure;
+        }
+
+        #navigation ul {
+            float: right;
+            margin-top: -45px;
+            padding: 0;
+        }
+
+        #navigation li {
+            color: azure;
+            float: left;
+            list-style: none;
+            margin-top: -15px;
+            padding: 20px 10px 0 10px;
+            height: 38px;
+            display: inline;
+        }
+
+        nav a{
+            color: azure;
+        }
+
+        .active {
+            border-bottom: 1px solid azure;
+            
+        }
+
+        .blockContent {
+            width: 100vw;
+            height: 100vh;;
+        }
+        
+        #performance {
+            background-image: url("images/performance.jpg");
+            background-repeat: no-repeat;
+            object-fit: fill;
+            background-color: #dfdfdf;
+        }
+
+        #performance article {
+            width: 50%;
+            padding: 5%;
+            color: #4B5362;
+            float: left;
+        }
+
+        #performance aside {
+            float: right;
+            padding: 160px 20px 0 0;
+        }
+
+        .button {
+            color: #4B5362;
+            width: 150px;
+            height: 25px;
+            background-color: none;
+            border: 2px solid #4B5362;
+            border-radius: 15px;
+            text-align: center;
+            padding-top:4px;
+        }
+
+        .clearFloats {
+            clear: both;
+        }
+
+        #autopilot {
+            background: linear-gradient(to bottom, #030504 0%, #4B4C4E 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        #autopilot img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+
+        .col{
+            float: left;
+            width: 50%;
+            padding: 200px 0 0 0;
+            
+        }
+
+        .colText {
+            position: relative;
+            color: azure;
+            width: 40%;
+            padding-left: 60px;
+        }
+
+        #safety {
+            background-color: #E3F5FF;
+        }
+
+        #safety img {
+            width: 100%;
+            height: auto;
+        }
+
+        #safety section {
+            width: 50%;
+            height: 50%;
+            padding: 120px 0 0 0;
+        }
+
+        #safety article {
+            width: 50%;
+            height: 50%;
+        }
+
+        #safety aside {
+            width: 45%;
+            margin: -400px 0 0 -250px;
+            padding: 0;
+            float: right;
+        }
+
+        th,td {
+            border: 1px solid azure;
+            background-color: #ccdae6;
+            padding: 10px;
+        }
+
+        #orderNow {
+            background-image: url("images/ordernow.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+            background-repeat: no-repeat;
+            object-fit: fill;
+            background-blend-mode: overlay;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        #orderBtn {
+            width: 200px;
+            height: 30px;
+            margin-top: 200px;
+            padding: 8px 0 0 0;
+            font-weight: bold;
+            color: azure;
+            border: 3px solid azure;
+            border-radius: 20px;
+            display: inline-block;
+        }
+
+        footer {
+            color: azure;
+            height: 60px;
+            background-color: #4B5362;
+            margin: 0;
+            padding: 35px 0 0 0;
+            text-align:center;
+        }
+
+        @media screen and (max-width: 600px;) {
+            #navigation li {
+                visibility: hidden;
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 875px;) {
+            .col {
+                clear: both;
+                width: 100%;
+            }
+        }
+
     </style>
 
 </head>
 
 <body>
+<div id="wrapper">
+    <div id="navigation">
+        <header class="center">
+            <div id="logo">
+                <a href="#">Model S</a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#performance">Performance</a></li>
+                    <li ><a href="#autopilot">Autopilot</a></li>
+                    <li><a href="#safety">Safety</a></li>
+                    <li><a href="#orderNow">Order Now</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
 
-    <h1>This is Tesla's Model S</h1>
+    <div id="performance" class="blockContent">
+        <section class="center">
+            <article>
+                <h2>Performance</h2>
+                <h3>Setting Standards</h3>
+                <p>Model S sets an industry standard for performance and safety. Tesla’s all-electric powertrain delivers unparalleled performance in all weather conditions – with Dual Motor All-Wheel Drive, adaptive air suspension and ludicrous acceleration. </p>
+            </article>
+            <aside>
+                <a href="https://www.tesla.com/models"><p class="button">Learn More</p></a>
+            </aside>
+        </section>
+    </div>
 
-    <img src="images/models1.jpg" title="Model S">
-    <p><a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tesla.com%2Fmodels&psig=AOvVaw1j74EMR_wTGgdHWSwqbvkZ&ust=1592617507568000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOCB2tjgjOoCFQAAAAAdAAAAABAI">Source</a></p>
+    <div id="autopilot" class="blockContent">
+        <section class="center">
+            <article>
+                <div class="row">
+                    <div class="col">
+                      <img src="images/autopilot.jpg" alt="This is what Autopilot looks like." title="Autopilot.">
+                    </div>
+                    <div class="col colText">
+                      <h2>What does Autopilot do?</h2>
+                      <p>Autopilot enables your car to steer, accelerate and brake automatically within
+                        its lane. Full Self-Driving Capability introduces additional features and improves
+                        existing functionality to make your car more capable.</p>
+                    </div>
+                  </div>
+            </article>
+        </section>
+    </div>
+
+    <div id="safety" class="blockContent">
+        <div class="center">
+            <section>
+                <img src="images/safety.jpg">
+            </section>
+            <article>
+                <h2>Safety</h2>
+                <p>Model S is built for safety, with all-electric architecture designed to provide protection from every side—and one of the lowest rollover risks of any car on the road.</p>
+            </article>
+            <aside>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td>Front-Impact Protection</td>
+                        <td>There is no internal combustion engine in Model S, so the crumple zone has greater opportunity to minimize occupant deceleration in the event of frontal impact.</td>
+                    </tr>
+                    <tr>
+                        <td>Side-Impact Protection</td>
+                        <td>The combination of a high-strength central pillar and an energy-absorbing sill structure provides exceptional protection to both the occupant and the under-floor mounted battery pack.</td>
+                    </tr>
+                    <tr>
+                        <td>Low Rollover Risk</td>
+                        <td>The position and weight of the floor-mounted battery pack provides a very low center of gravity—allowing for a very low rollover risk.</td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+    </div>
+
+    <div id="orderNow" class="blockContent">
+        <div>
+            <a href="https://www.tesla.com/models/design#battery"><p id="orderBtn">Order Now</p></a>
+        </div>
+    </div>
+
+    <footer>
+        <p>I do not own the rights to any of the above pictures.</p>
+    </footer>
+
+</div>
+
+    <script>
+        let screenHeight = window.screen.height;
+        let screenWidth = window.screen.width;
+        console.log(screenHeight);
+        console.log(screenWidth);
+
+    
+    </script>
 
 </body>
 
