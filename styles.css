@@ -76,7 +76,7 @@
             display: block;
         }
 
-        ul li:hover {
+        #menuIcon:hover + li {
             display: block;
         }
     
