@@ -6,216 +6,16 @@
     <title>Model S</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 
     <style>
         html, body {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: Avenir;
+            font-family: 'Montserrat', sans-serif;
         }
-
-        p {
-            margin: 0;
-            padding: 0;
-        }
-
-        .center {
-            margin: 0 auto;
-            width: 90%;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        #navigation {
-            height: 60px;
-            background-color: #4B5362;
-        }
-
-        #logo {
-            text-decoration: none;
-            
-            width: 80px;
-            height: 30px;
-            font-size: 20px;
-            font-weight: bolder;
-            padding: 15px 30px;
-        }
-
-        #logo a {
-            color: azure;
-        }
-
-        #navigation ul {
-            float: right;
-            margin-top: -45px;
-            padding: 0;
-        }
-
-        #navigation li {
-            color: azure;
-            float: left;
-            list-style: none;
-            margin-top: -15px;
-            padding: 20px 10px 0 10px;
-            height: 38px;
-            display: inline;
-        }
-
-        nav a{
-            color: azure;
-        }
-
-        .active {
-            border-bottom: 1px solid azure;
-            
-        }
-
-        .blockContent {
-            width: 100vw;
-            height: 100vh;;
-        }
-        
-        #performance {
-            background-image: url("images/performance.jpg");
-            background-repeat: no-repeat;
-            object-fit: fill;
-            background-color: #dfdfdf;
-        }
-
-        #performance article {
-            width: 50%;
-            padding: 5%;
-            color: #4B5362;
-            float: left;
-        }
-
-        #performance aside {
-            float: right;
-            padding: 160px 20px 0 0;
-        }
-
-        .button {
-            color: #4B5362;
-            width: 150px;
-            height: 25px;
-            background-color: none;
-            border: 2px solid #4B5362;
-            border-radius: 15px;
-            text-align: center;
-            padding-top:4px;
-        }
-
-        .clearFloats {
-            clear: both;
-        }
-
-        #autopilot {
-            background: linear-gradient(to bottom, #030504 0%, #4B4C4E 100%);
-            margin: 0;
-            padding: 0;
-        }
-
-        #autopilot img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-        }
-
-        .col{
-            float: left;
-            width: 50%;
-            padding: 200px 0 0 0;
-            
-        }
-
-        .colText {
-            position: relative;
-            color: azure;
-            width: 40%;
-            padding-left: 60px;
-        }
-
-        #safety {
-            background-color: #E3F5FF;
-        }
-
-        #safety img {
-            width: 100%;
-            height: auto;
-        }
-
-        #safety section {
-            width: 50%;
-            height: 50%;
-            padding: 120px 0 0 0;
-        }
-
-        #safety article {
-            width: 50%;
-            height: 50%;
-        }
-
-        #safety aside {
-            width: 45%;
-            margin: -400px 0 0 -250px;
-            padding: 0;
-            float: right;
-        }
-
-        th,td {
-            border: 1px solid azure;
-            background-color: #ccdae6;
-            padding: 10px;
-        }
-
-        #orderNow {
-            background-image: url("images/ordernow.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-            background-repeat: no-repeat;
-            object-fit: fill;
-            background-blend-mode: overlay;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        #orderBtn {
-            width: 200px;
-            height: 30px;
-            margin-top: 200px;
-            padding: 8px 0 0 0;
-            font-weight: bold;
-            color: azure;
-            border: 3px solid azure;
-            border-radius: 20px;
-            display: inline-block;
-        }
-
-        footer {
-            color: azure;
-            height: 60px;
-            background-color: #4B5362;
-            margin: 0;
-            padding: 35px 0 0 0;
-            text-align:center;
-        }
-
-        @media screen and (max-width: 600px;) {
-            #navigation li {
-                visibility: hidden;
-                display: none;
-            }
-        }
-
-        @media screen and (max-width: 875px;) {
-            .col {
-                clear: both;
-                width: 100%;
-            }
-        }
-
     </style>
 
 </head>
@@ -228,8 +28,9 @@
                 <a href="#">Model S</a>
             </div>
             <nav>
+                <div id="menuIcon" onclick="menuFunc()">&#9776;</div>
                 <ul>
-                    <li class="active"><a href="#performance">Performance</a></li>
+                    <li><a href="#performance">Performance</a></li>
                     <li ><a href="#autopilot">Autopilot</a></li>
                     <li><a href="#safety">Safety</a></li>
                     <li><a href="#orderNow">Order Now</a></li>
@@ -272,7 +73,7 @@
     <div id="safety" class="blockContent">
         <div class="center">
             <section>
-                <img src="images/safety.jpg">
+                <img src="images/safety.jpg" alt="Model S" title="Great view behind Model S.">
             </section>
             <article>
                 <h2>Safety</h2>
@@ -298,6 +99,13 @@
                     </tr>
                 </table>
             </aside>
+            <div id="safetyFeatures">
+                <h3>Features</h3>
+                <br>
+                <p>Front-Impact Protection.</p><hr>
+                <p>Side-Impact Protection.</p><hr>
+                <p>Low Rollover Risk.</p><hr>
+            </div>
         </div>
     </div>
 
@@ -308,20 +116,15 @@
     </div>
 
     <footer>
-        <p>I do not own the rights to any of the above pictures.</p>
+        <p>I do not own the rights to any of the above content.</p>
+        <a href="index.html" id="cybertruck"><p><span>&#127937;</span>Check out Cybertruck</p></a>
+        <p>ILL Development <span>&#169;</span></p>
     </footer>
 
 </div>
 
-    <script>
-        let screenHeight = window.screen.height;
-        let screenWidth = window.screen.width;
-        console.log(screenHeight);
-        console.log(screenWidth);
-
-    
-    </script>
-
+    <script src="scripts.js"></script>
+  
 </body>
 
 </html>
