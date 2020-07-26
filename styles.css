@@ -426,11 +426,15 @@ font-family: Verdana, sans-serif;
         left: 50%;
         transform: translateX(-50%);
     }
+    #home-nav-bar {
+        text-align: center;
+    }
     #home-nav {
-        clear: both;
-        width: 100%;
+        clear: left;
+        width: 80vw;
+        margin: 0 auto;
+        padding: 55px 0 0 0;
         font-size: 16px;
-        
     }
     #phrase {
         top: 65%;
