@@ -419,9 +419,21 @@ font-family: Verdana, sans-serif;
     #home-logo {
         height: 30px;
         width: auto;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #home-nav {
+        clear: left;
+        width: 100%;
         font-size: 16px;
+        position: absolute;
+        top: 0px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #phrase {
         top: 65%;
@@ -429,10 +441,7 @@ font-family: Verdana, sans-serif;
         transform: translateX(-50%);
     }
     #network {
-        position:absolute;
-        top: 85%;
-        left: 50%;
-        transform: translateX(-50%);
+        display: none;
     }
 }
 @media screen and (max-width: 750px) {
