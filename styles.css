@@ -177,8 +177,6 @@ font-family: Verdana, sans-serif;
             grid-gap: 20px;
             margin: 50px 0 30px 30px;
         }
-        .abt-entry {
-        }
         .abt-entry img {
             width: 200px;
             height: 200px;
@@ -249,8 +247,6 @@ font-family: Verdana, sans-serif;
             padding-top: 80px;
             color: #de9e36;
         }
-        .text-cont p {
-        }
         .grid-sect {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 300px));
@@ -272,9 +268,6 @@ font-family: Verdana, sans-serif;
         }
 /* ----------Services---------- */
 
-        .serv-cont-sect {
-                
-        }
         .serv-design {
             height: 300px;
             width: 100%;
@@ -345,7 +338,7 @@ font-family: Verdana, sans-serif;
         }
         .half-form h1 {
             text-align: center;
-            padding-bottom: 50px;
+            padding-bottom: 25px;
         }
         .half-form {
             padding: 5% 10% 0 10%;
@@ -389,6 +382,12 @@ font-family: Verdana, sans-serif;
             left: 75%;
             transform: translateX(-50%);
         }
+        .half-form p {
+            text-align: center;
+            color: #de9e36;
+            padding-bottom: 25px;
+            display: none;
+        }
 /* -----------Sources------------ */
 
         .column {
@@ -409,8 +408,6 @@ font-family: Verdana, sans-serif;
         .src {
             color: #37323e;
             padding: 5px 5px;
-        }
-        .right {
         }
 /* -------------Media Queries------------ */
 
@@ -454,6 +451,9 @@ font-family: Verdana, sans-serif;
     .half-bg {
         height: 100px;
         background-image: url(images/mobile-banner.jpg), linear-gradient(to top, rgba(222, 158, 54, .9),rgba(222, 158, 54, .9));
+    }
+    .half-form {
+        height: 100%;
     }
     #contact-list {
         display: none;
