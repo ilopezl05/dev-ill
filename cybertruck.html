@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Cybertruck</title>
+    <meta charset="utf-8">
+
+    <style>
+        body, html{
+           margin: 0 auto;
+           padding: 0; 
+        }
+
+        #mainContainer{
+            text-align: center;
+            background-color: #00001a;
+            padding: 25px;
+        }
+
+        .subContainer{
+            background-color:rgba(255, 255, 255, .5);
+            width: 80%;
+            margin: 0 auto;
+            margin-top:10px;
+            padding: 10px;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            max-width:600px;
+            max-height:300px;
+        }
+
+        table{
+            margin: 0 auto;
+            position: relative;
+            width: auto;
+            max-width:600px;
+        }
+
+        th, td{
+            width: 160px;
+            height: 30px;
+        }
+
+        .highlight{
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        ul{
+            text-align:justify;
+            width: 50%;
+            margin:0 auto;
+        }
+
+        #exoImg{
+            visibility: hidden;
+            display: none;
+        }
+
+
+        #button{
+            background-color: rgba(94, 94, 94, 0.5);
+            border: 3px solid azure;
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 auto;
+            padding: 5px 12px;
+            text-decoration: none;
+            color:azure;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div id="mainContainer" style="color: azure;">
+        <h1>Cybertruck</h1>
+        <h2>Tesla's upcoming pick up truck</h2>
+        <h3>June 10, 2020</h3>
+
+        <div class="subContainer">
+            
+            <h4><i>What's all the hype about Tesla's new pick up truck?</i></h4>
+            <p>
+                Tesla's new pick up truck, <b>Cybertruck,</b> was revealed last year and it is an out of the ordinary truck, 
+                not only because it is electric powered, but because of its out of this world look.
+            </p>
+            <img src= "images/tesla1.jpg" alt="Cybertruck at the track." title="This is Tesla's new Cybertruck.">
+
+            <p><small>https://www.tesla.com/xNVh4yUEc3B9/04_Desktop.jpg</small></p>
+        
+        </div>
+        
+        <div class="subContainer">
+            
+            
+            <h4><i>What separates Tesla's Cybertruck from the rest?</i></h4>
+            <p>
+                The Cybertruck is an <b>electric powered</b> truck that con go from <em>0 to 60 miles in 6.5
+                seconds</em> and has an estimated range of 250 miles per charge, maybe it does not sound very promising, but that is only the base model.
+            </p>
+            <img src="images/tesla2.jpg" alt="Four wheeler loaded in the back of the Cybertruck." title="Cybertruck showing off.">
+            <p><small>https://www.tesla.com/xNVh4yUEc3B9/08_Desktop.jpg</small></p>
+        
+        </div>
+
+        <div class="subContainer">
+
+            <p>Here is more information about every Cybertruck trim.</p>
+            <table style="border: 1px solid azure;">
+                <tr>
+                    <th class="highlight"></th>
+                    <th class="highlight">Single Motor RWD</th>
+                    <th class="highlight">Dual Motor AWD</th>
+                    <th class="highlight">Tri Motor AWD</th>
+                </tr>
+                <tr>
+                    <td class="highlight">Range</td>
+                    <td>250+ miles</td>
+                    <td>300+ miles</td>
+                    <td>500+ miles</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Towing Capacity</td>
+                    <td>7,500+ Lbs</td>
+                    <td>10,000+ Lbs</td>
+                    <td>14,000+ Lbs</td>
+                </tr>
+                <tr>
+                    <td class="highlight">Autopilot</td>
+                    <td>Standard</td>
+                    <td>Standard</td>
+                    <td>Standard</td>
+                </tr>
+            </table>
+
+            <p>Cybertruck is also built with durability and passenger protection in mind.</p>
+            <ul>
+                <li>Exoskeleton</li>
+                <li>Ultra-Hard 30X Cold-Rolled Stainless Steel</li>
+                <li>Tesla Armor Glass</li>
+            </ul>
+            <p>These three design features make Cybertruck the safest pickup truck on the road.</p>
+            
+                <button id="revealButton" onclick="showImg()" title="See Cybertruck's Exoskeleton">See Cybertruck's Exoskeleton</button><br>
+                <img id="exoImg" src="images/exoskeleton.jpg" title="Cybertruck's Exoskeleton">
+            
+        </div>
+
+        <div class="subContainer">
+
+
+            <p>If you want to know more about the Cybertruck or would like to order one, click on the 
+                next image and it will take you to the right place.
+            </p>
+            <a href="https://www.tesla.com/cybertruck"> <img src="images/tesla3.jpg" alt="Cybertruck towing a trailer." title="Click me if you want to know more about Cybertruck."></a>
+            <p><small>https://www.tesla.com/xNVh4yUEc3B9/07_Desktop.jpg</small></p>
+        </div>
+
+        <div class="subContainer">
+            <p>Are you a car type of person? Then, check Tesla's Model S.<br>
+            Click the button.
+            </p>
+            <a href="models.html" id="button" title="Click this button to check Tesla's Model S">Model S</a>
+        </div>
+
+    </div>
+
+    <script>
+        function showImg() {
+            document.getElementById('exoImg').style.visibility="visible";
+            document.getElementById('exoImg').style.display="inline";
+            document.getElementById('revealButton').style.visibility="hidden";
+            document.getElementById('revealButton').style.display="none";
+        }
+    </script>
+
+</body>
+
+</html>
