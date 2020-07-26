@@ -427,13 +427,10 @@ font-family: Verdana, sans-serif;
         transform: translateX(-50%);
     }
     #home-nav {
-        clear: left;
+        clear: both;
         width: 100%;
         font-size: 16px;
-        position: absolute;
-        top: 0px;
-        left: 50%;
-        transform: translateX(-50%);
+        
     }
     #phrase {
         top: 65%;
