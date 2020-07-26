@@ -426,6 +426,13 @@ font-family: Verdana, sans-serif;
     #home-nav li {
         padding: 0 5px;
     }
+    #nav img {
+        height: 25px;
+    }
+    #nav li {
+        font-size: 14px;
+        padding: 0 30px;
+    }
     #phrase {
         top: 65%;
         left: 50%;
