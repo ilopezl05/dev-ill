@@ -410,24 +410,24 @@ font-family: Verdana, sans-serif;
         }
 /* -----------------Blog----------------- */
 
-#blog-wrapper {
-    width: 100vw;
-    height: 100vh;
-    text-align: center;
-    background-color: orange;
-}
-#progressbar {
-    display: inline-block;
-    height: 100vh;
-    margin-top: 25%;
-}
-#blog-bar {
-    width: 400px;
-    height: 20px;
-}
-#blog-bar .ui-progressbar-value {
-
-}
+        #blog-wrapper {
+            width: 100vw;
+            height: 100vh;
+            text-align: center;
+            background-color: #de9e36;
+        }
+        #progressbar {
+            display: inline-block;
+            height: 100vh;
+            margin-top: 25%;
+        }
+        #blog-bar {
+            width: 400px;
+            height: 20px;
+        }
+        #blog-bar .ui-progressbar-value {
+        
+        }
 /* -------------Media Queries------------ */
 
 
