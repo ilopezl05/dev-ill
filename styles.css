@@ -418,15 +418,11 @@ font-family: Verdana, sans-serif;
         }
         #progressbar {
             display: inline-block;
-            height: 100vh;
             margin-top: 25%;
         }
         #blog-bar {
             width: 400px;
             height: 20px;
-        }
-        #blog-bar .ui-progressbar-value {
-        
         }
 /* -------------Media Queries------------ */
 
