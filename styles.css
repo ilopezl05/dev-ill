@@ -418,11 +418,16 @@ font-family: Verdana, sans-serif;
         }
         #progressbar {
             display: inline-block;
+            text-align: center;
             margin-top: 25%;
+            background-color: tomato;
+            
         }
         #blog-bar {
-            width: 400px;
+            display: inline-block;
+            width: 300px;
             height: 20px;
+            text-align: center;
         }
 /* -------------Media Queries------------ */
 
