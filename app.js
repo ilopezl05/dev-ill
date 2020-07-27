@@ -8,6 +8,5 @@ console.log("Loaded Up");
           }else {
             $('#submit-msg').html("We will get back to you as soon as possible.")  
           }
-
          console.log("All done")   
       });
