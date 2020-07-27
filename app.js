@@ -19,7 +19,7 @@ console.log("Loaded Up");
 //jQuery UI- Progressbar---------------
 
 $( function() {
-  $( "#bar" ).progressbar({
+  $( "#blog-bar" ).progressbar({
       value: 63
   });
 } );

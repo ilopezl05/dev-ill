@@ -421,12 +421,12 @@ font-family: Verdana, sans-serif;
     height: 100vh;
     margin-top: 25%;
 }
-#bar {
+#blog-bar {
     width: 400px;
     height: 20px;
 }
-#bar .ui-progressbar-value {
-    background-color: orange;
+#blog-bar .ui-progressbar-value {
+
 }
 /* -------------Media Queries------------ */
 
