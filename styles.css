@@ -408,6 +408,26 @@ font-family: Verdana, sans-serif;
             color: #37323e;
             padding: 5px 5px;
         }
+/* -----------------Blog----------------- */
+
+#blog-wrapper {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    background-color: orange;
+}
+#progressbar {
+    display: inline-block;
+    height: 100vh;
+    margin-top: 25%;
+}
+#bar {
+    width: 400px;
+    height: 20px;
+}
+#bar .ui-progressbar-value {
+    background-color: orange;
+}
 /* -------------Media Queries------------ */
 
 

@@ -15,3 +15,11 @@ console.log("Loaded Up");
         
     console.log("All done")   
     });
+
+//jQuery UI- Progressbar---------------
+
+$( function() {
+  $( "#bar" ).progressbar({
+      value: 63
+  });
+} );
